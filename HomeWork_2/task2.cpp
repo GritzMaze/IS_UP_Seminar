@@ -33,8 +33,12 @@ for(size_t i = 0; i < length; i++)
   }
 }
 
-print(str, length);
 
+print(str, length);
+std::cout << "\n";
+std::cout << getSize(str);
+std::cout << "\n";
+if(str[115] == '\0') std::cout << "DA";
 // V bavisokozata na OON e otkrita vvisokoun6na namesa. trqbva nezvisokoabavno da suob6tim za srevisokoshtata v 4 na vsvisokoeki 4ovek ot otvisokodela!
 
   return 0;
