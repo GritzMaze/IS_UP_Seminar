@@ -17,16 +17,12 @@ int main() {
 
         for(int row = 0; row < n; row++)
                 for(int col = 0; col < n; col++)
-                {
                         if(col > row) arr[row][col] = col + arr[row][col-1];
-                }
 
 
         for(int row = 0; row < n; row++)
                 for(int col = n-1; col >= 0; col--)
-                {
                         if(row > col) arr[row][col] = (arr[row-1][col] + arr[row][col+1])/2;
-                }
 
         for(int i = 0; i < n; i++)
         {
